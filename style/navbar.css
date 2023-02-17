@@ -1,0 +1,58 @@
+.header{
+    /* border: 1px solid red; */
+    background-color: var(--bg-dark);
+    /* DIMENSIONES */
+    width: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* DIMENSIONES */
+    height: 98px;
+    max-height: 98px;
+    min-width: fit-content;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.logo{
+    display: block;
+    position:absolute;
+    /* justify-self: flex-start; */
+    left: 0px;
+}
+.logo:focus-visible{
+    outline: none;
+}
+.logo img{
+    width: 250px;
+}
+.menu{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    min-width: fit-content;
+}
+.menu li{
+    z-index: 999999;
+    margin: 0 4px 0 4px;
+    padding: 0 0 5px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+.menu a{
+    padding: 0 15px;
+    /* TEXTO */
+    font: 1.2em 'Nunito', sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--font-secondary-color);
+}
+
+.menu li:hover{
+    /* outline: auto; */
+    border-bottom: 2px solid red;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    border-radius: 5px 5px 0px 0px;
+}
